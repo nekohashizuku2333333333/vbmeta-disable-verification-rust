@@ -2,5 +2,10 @@
 name = "vbmeta-disable-verif-rust"
 version = "0.1.0"
 edition = "2024"
-
+repository = "https://github.com/nekohashizuku2333333333/vbmeta-disable-verification-rust"
 [dependencies]
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
